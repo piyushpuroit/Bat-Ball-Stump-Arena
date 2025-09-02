@@ -2,7 +2,10 @@
 
 An interactive cricket-themed **Rock-Paper-Scissors** style game built with **HTML, CSS, and JavaScript**.  
 Choose **Bat**, **Ball**, or **Stump** and challenge the computer!
+## 🖥️ Live Demo
+🔗 **Play Now** → [Live on Vercel](https://bat-ball-stump-arena.vercel.app/) 
 
+---
 ---
 
 ## ✨ Features
@@ -13,16 +16,10 @@ Choose **Bat**, **Ball**, or **Stump** and challenge the computer!
 - 🚀 Deployable on **Vercel** (lightweight and fast)
 
 
-
 📚 Rules
 - Bat beats Ball 🏏 > ⚪ 
 - Ball beats Stump ⚪ > 🪵
 - Stump beats Bat 🪵 > 🏏
----
-
-## 🖥️ Live Demo
-🔗 **Play Now** → [Live on Vercel](https://your-vercel-link.vercel.app)  
-
 ---
 
 ## 📷 Preview
