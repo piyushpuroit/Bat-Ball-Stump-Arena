@@ -26,7 +26,7 @@ Choose **Bat**, **Ball**, or **Stump** and challenge the computer!
 ---
 
 ## 📷 Preview
-![Game Preview](preview.png)
+![Game Preview](https://github.com/piyushpuroit/Bat-Ball-Stump-Arena/blob/main/Bat-Ball-Stump-Game/preview.png)
 
 ---
 🛠️ Tech Stack
