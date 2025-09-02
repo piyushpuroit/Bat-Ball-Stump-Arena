@@ -31,6 +31,6 @@ Choose **Bat**, **Ball**, or **Stump** and challenge the computer!
 ---
 🛠️ Tech Stack
 
-HTML5
-CSS3
-Vanilla JavaScript
+- HTML5
+- CSS3
+- JavaScript
