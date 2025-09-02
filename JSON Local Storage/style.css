@@ -1,0 +1,21 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color:#d3f7f7;
+}
+h1{
+    background-color: #ebeef0;
+    color: rgb(190, 44, 63);
+}
+.choice-button{
+    margin: 20px;
+    height: 120px;
+    object-fit: contain;
+    background-color: #d3f7f7;
+    border: none;
+    cursor: pointer;
+}
+.choice-image{
+    height: 80%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Bat Ball Stump Game </h1>
+    <button id="bat" class ="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+
+     resultMsg = getResult('Bat',computerChoice);
+     showResult('Bat',computerChoice,resultMsg);
+    "> <img src="Assets/cricket-bat.png" alt="cricket-bat" class="choice-image"> </button>
+
+
+    <button id="ball" class ="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Ball',computerChoice);
+    showResult('Ball',computerChoice,resultMsg);
+
+    "><img src="Assets/cricket-ball.png" alt="cricket-ball" class="choice-image"></button>
+
+
+    <button id="stump" class ="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Stump',computerChoice);
+    showResult('Stump',computerChoice,resultMsg);
+
+    "><img src="Assets/cricket-stump.png" alt="cricket-stump" class="choice-image"></button>
+
+    <button id="reset" class = "choice-button" onclick="localStorage.clear()
+    score = {
+            win : 0,
+            lost: 0,
+            tie : 0,
+        }
+        showResult();
+        " style="height:38px; object-fit:contain; border-radius: 35px; padding: 0px;background-color: #80ec05;" ><img src="Assets/reset.png" alt="reset" class="choice-image"></button>
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <div><h3>Bat Beats Ball</h3></div>
+    <div><h3>Ball Beats Stump</h3></div>
+    <div><h3>Stump Beats Bat</h3></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

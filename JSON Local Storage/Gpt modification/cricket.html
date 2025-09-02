@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bat • Ball • Stump</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="app-header">
+    <h1 class="title">Bat • Ball • Stump</h1>
+    <div class="header-actions">
+      <button id="rulesBtn" class="btn ghost" aria-controls="rules" aria-expanded="true">Rules</button>
+      <button id="resetBtn" class="btn danger" title="Reset score">
+        <img src="Assets/reset.png" alt="reset" class="icon-reset" />
+        Reset
+      </button>
+    </div>
+  </header>
+
+  <!-- RULES CARD (shown initially; collapses after a pick) -->
+  <section id="rules" class="rules show">
+    <h2 class="rules-title">How it works</h2>
+    <div class="rules-rows">
+      <div class="rule">
+        <img src="Assets/cricket-bat.png" alt="" class="mini-icon" />
+        <span>Bat <b>beats</b> Ball</span>
+        <img src="Assets/cricket-ball.png" alt="" class="mini-icon" />
+      </div>
+      <div class="rule">
+        <img src="Assets/cricket-ball.png" alt="" class="mini-icon" />
+        <span>Ball <b>beats</b> Stump</span>
+        <img src="Assets/cricket-stump.png" alt="" class="mini-icon" />
+      </div>
+      <div class="rule">
+        <img src="Assets/cricket-stump.png" alt="" class="mini-icon" />
+        <span>Stump <b>beats</b> Bat</span>
+        <img src="Assets/cricket-bat.png" alt="" class="mini-icon" />
+      </div>
+    </div>
+    <p class="hint">Tap a card to play a round. You vs Computer.</p>
+  </section>
+
+  <!-- SCOREBOARD -->
+  <section class="scoreboard">
+    <div class="score-card">
+      <span class="label">Wins</span>
+      <span id="wins" class="value">0</span>
+    </div>
+    <div class="score-card">
+      <span class="label">Losses</span>
+      <span id="losses" class="value">0</span>
+    </div>
+    <div class="score-card">
+      <span class="label">Ties</span>
+      <span id="ties" class="value">0</span>
+    </div>
+    <div class="score-card">
+      <span class="label">Rounds</span>
+      <span id="rounds" class="value">0</span>
+    </div>
+  </section>
+
+  <!-- CHOICES -->
+  <main class="arena">
+    <button class="choice" data-choice="Bat" id="batBtn" aria-label="Choose Bat">
+      <div class="badge">Bat</div>
+      <img src="Assets/cricket-bat.png" alt="Bat" />
+    </button>
+
+    <button class="choice" data-choice="Ball" id="ballBtn" aria-label="Choose Ball">
+      <div class="badge">Ball</div>
+      <img src="Assets/cricket-ball.png" alt="Ball" />
+    </button>
+
+    <button class="choice" data-choice="Stump" id="stumpBtn" aria-label="Choose Stump">
+      <div class="badge">Stump</div>
+      <img src="Assets/cricket-stump.png" alt="Stump" />
+    </button>
+  </main>
+
+  <!-- RESULT STRIP -->
+  <section class="result-strip" aria-live="polite" aria-atomic="true">
+    <div class="picks">
+      <div class="pick">
+        <span class="who">You</span>
+        <div id="youPick" class="pick-icon"></div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="pick">
+        <span class="who">Computer</span>
+        <div id="cpuPick" class="pick-icon"></div>
+      </div>
+    </div>
+    <div id="resultText" class="result-text"></div>
+  </section>
+
+  <footer class="footer">
+    <button id="playAgain" class="btn primary" hidden>Play again</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

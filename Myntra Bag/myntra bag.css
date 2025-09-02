@@ -1,0 +1,17 @@
+.but1{
+    border:none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color:lightgreen;
+}
+.but2{
+    padding: 5px 15px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.but3{
+    border:none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color:lightgreen;
+}
