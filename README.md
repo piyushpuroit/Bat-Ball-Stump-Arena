@@ -26,7 +26,7 @@ Choose **Bat**, **Ball**, or **Stump** and challenge the computer!
 ---
 
 ## 📷 Preview
-(Add a screenshot or gif of the game here once deployed)
+![Game Preview](preview.png)
 
 ---
 🛠️ Tech Stack
