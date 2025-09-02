@@ -15,9 +15,9 @@ Choose **Bat**, **Ball**, or **Stump** and challenge the computer!
 
 
 📚 Rules
-Bat beats Ball 🏏 > ⚪ \n
-Ball beats Stump ⚪ > 🪵\n
-Stump beats Bat 🪵 > 🏏
+- Bat beats Ball 🏏 > ⚪ 
+- Ball beats Stump ⚪ > 🪵
+- Stump beats Bat 🪵 > 🏏
 ---
 
 ## 🖥️ Live Demo
